@@ -1,8 +1,6 @@
-# Define the item status condition
-is_perishable = True
-
-# Use the `not` operator to check if the item is NOT perishable
-long_shelf_life = not is_perishable
-
-# Print the result
-print("Does the item need to be sold quickly?", long_shelf_life) 
+# The item's discount and stock status have been defined
+discounted = False
+lowStock = True
+movingProduct = discounted or lowStock
+promotion = not movingProduct
+print("Is the item eligible for promotion?",promotion)
